@@ -1,0 +1,21 @@
+/* body start */
+
+.body {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-tip {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.input-group {
+    padding-bottom: 10px;
+}

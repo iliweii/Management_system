@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* 启用自定义滚动条，并设置容器属性 */
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 10px;
+}
+
+/* 滚动条凹槽，还可以设置边框属性。此处属性也可以直接在容器中设置 */
+body::-webkit-scrollbar-track-piece {
+	-webkit-border-radius: 0;
+}
+
+/* 滚动条 */
+body::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: #b8b8b8;
+	-webkit-border-radius: 6px;
+	outline-offset: -2px;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* head start */
+.head {
+	width: 100%;
+	height: auto;
+}
+
+.head-nav {
+	padding: 50px 100px 0 100px;
+}
+
+.nav-link {
+	margin: 0 20px;
+}
+
+.head-line {
+	width: 100%;
+	height: 1px;
+	background: #ff72a3;
+	margin: 0 auto;
+	background: linear-gradient(to right, #f8f9fa, #28a745, #28a745, #f8f9fa);
+	box-shadow: #28a745 0 1px 20px 1px;
+}
+
+.headinfo {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.headinfo>p {
+	font-size: 14px;
+	color: #000;
+	line-height: 18px;
+	margin: 0;
+}
+
+.nowtime, .username {
+	font-weight: 700;
+}
+
+/* second-nav start */
+.second-nav {
+	height: 100px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.second-nav>.nav {
+	margin: 0 0 0 100px;
+}
+
+/* body start */
+.body {
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	flex: 1;
+}
+
+.body-h1 {
+	font-size: 84px;
+	color: #636b6f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.body-h2 {
+	font-size: 84px;
+	color: #636b6f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	text-align: center;
+}
+
+.form {
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	transition: opacity 400ms;
+	opacity: 0;
+	z-index: -1;
+}
+
+.form-tip {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.input-group {
+	padding-bottom: 10px;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.maintitle {
+	font-size: 84px;
+	color: #636b6f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	margin: 30px auto 50px;
+	text-align: center;
+}
+
+.opgroup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.opgroup>div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.opgroup>div:nth-child(1) {
+	width: 400px;
+}
+
+.opgroup>div:nth-child(2) {
+	width: 500px;
+}
+
+.opbtn {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: black;
+	font-size: 16px;
+	transition: 400ms;
+	padding: 5px 20px;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+.opbtn:hover {
+	color: dodgerblue;
+	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+/* footer start */
+.foot {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.bottom {
+	width: 100%;
+	height: 40px;
+	padding-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 12px;
+	color: #000;
+	overflow: hidden;
+	background: linear-gradient(to bottom, rgba(248, 249, 250, 0.31),
+		rgba(248, 250, 248, 0.178), rgba(40, 167, 70, 0.226));
+}
+
+.bottom p {
+	margin: 0;
+}
+
+/* insert group */
+.insert-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.icon:hover {
+	background-color: #60adff;
+	transition: background-color 400ms;
+	border-radius: 50%;
+}
+
+.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	font-size: 8em;
+	line-height: 1;
+	color: #9e9ba4;
+	display: inline-block;
+}
+
+.link--kukuri {
+	text-transform: uppercase;
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #b2b0a9;
+}
+
+.link--kukuri:hover {
+	color: #b2b0a9;
+}
+
+.link--kukuri::after {
+	content: '';
+	position: absolute;
+	height: 16px;
+	width: 100%;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+	background: #F9F9F9;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.4s;
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link--kukuri:hover::after {
+	transform: translate3d(100%, 0, 0);
+}
+
+.link--kukuri::before {
+	content: attr(data-letters);
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	color: #424242;
+	white-space: nowrap;
+	width: 0%;
+	transition: width 0.4s 0.3s;
+}
+
+.link--kukuri:hover::before {
+	width: 100%;
+}

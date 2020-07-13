@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/management_system?useSSL=false&amp;characterEncoding=utf-8&amp;useUnicode=true</property>
+		<property name="user">root</property>
+		<property name="password"></property>
+		<property name="checkoutTimeout">30000</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+		<property name="maxStatements">200</property>
+	</default-config>
+	<named-config name="management_system">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/management_system?useSSL=false&amp;characterEncoding=utf-8&amp;useUnicode=true</property>
+		<property name="user">root</property>
+		<property name="password"></property>
+		<property name="initialPoolSize">5</property>
+		<property name="maxPoolSize">15</property>
+	</named-config>
+</c3p0-config>
+
+
+
