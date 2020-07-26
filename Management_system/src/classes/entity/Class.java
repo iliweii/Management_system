@@ -1,12 +1,5 @@
 package classes.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@RequiredArgsConstructor
 public class Class {
 	
 	// 编号
@@ -15,5 +8,35 @@ public class Class {
 	private String cno, cname, college;
 	// 班级人数
 	private Integer num;
+	public Integer getCid() {
+		return cid;
+	}
+	public void setCid(Integer cid) {
+		this.cid = cid;
+	}
+	public String getCno() {
+		return cno;
+	}
+	public void setCno(String cno) {
+		this.cno = cno;
+	}
+	public String getCname() {
+		return cname;
+	}
+	public void setCname(String cname) {
+		this.cname = cname;
+	}
+	public String getCollege() {
+		return college;
+	}
+	public void setCollege(String college) {
+		this.college = college;
+	}
+	public Integer getNum() {
+		return num;
+	}
+	public void setNum(Integer num) {
+		this.num = num;
+	}
 	
 }
